@@ -1,6 +1,9 @@
-/* body{
-background-color: #5fa199;
-} */
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	Font-family: Helvetica;
+}
 header, main{
     display: flex;
     align-items: center;
