@@ -1,42 +1,21 @@
+/* header, main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+/*GENERAL*/
+:root{
+    --dark: #211915;
+    --light: #ffffff;
+    --primary: #f8e12e;
+    --secondary: #5fa199;
+    --danger: #c24b35;
+}
 *{
     box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	Font-family: Helvetica;
 }
-header, main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.icon{
-    max-width: 15rem;
-    max-height: 15rem;
-    filter: drop-shadow(1px 1px 3px #211915)
-}
-.title{
-    font-size: 5em;
-    color: #f8e12e;
-    -webkit-text-stroke: 2px #c24b35;
-    text-shadow: 3px 3px 5px #211915; 
-}
-nav{
-    text-align: center;
-    background-color: #c24b35;
-}
-a{
-    text-decoration: none;
-    color: #ffffff
-}
-a[href="#"]{
-    color:#f8e12e;
-}
-
-/* Paleta de colores
-#f8e12e 
-#5fa199
-#c24b35
-#211915
-#ffffff
-*/
