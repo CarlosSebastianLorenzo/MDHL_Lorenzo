@@ -36,6 +36,7 @@ body{
     top: 18rem;
     right: 15vw;
     filter: drop-shadow(1px 1px 1px var(--dark));
+    cursor: pointer;
 }
 .site{
     background-color: var(--dark);
@@ -82,8 +83,8 @@ aside>figure>img{
     width:35vw;
 }
 .section{
-    padding: 2em;
-    translate: 0 -9em;
+    position: absolute;
+    padding: 5em;
 }
 .section>section{
     padding: 1em;
