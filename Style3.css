@@ -130,3 +130,7 @@ aside>figure>img{
 .section>section{
     padding: 1em;
 }
+li{
+    list-style-image: url() ;
+    list-style-type: disclosure-
+}
