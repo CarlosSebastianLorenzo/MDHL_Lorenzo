@@ -11,6 +11,10 @@
 	margin: 0;
 	padding: 0;
 	Font-family: Helvetica;
+    cursor: url(assets/hockey_stick3.png), auto;
+}
+a:hover, .icon:hover{
+    cursor: url(assets/hockey_glove3.png), auto;
 }
 /*HEADER*/
 .title{
@@ -55,7 +59,6 @@
 .icon:hover{
     scale: 1.05;
     transition: 1s;
-    cursor: pointer;
 }
 .icon:not(hover){
     scale: 1;
