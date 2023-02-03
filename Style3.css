@@ -118,7 +118,7 @@ a[href="#"]{
 }
 /*MAIN*/
 main{
-    background: linear-gradient(180deg, var(--light), var(--danger)),  url(assets/Palos\ Hockey.png) ;
+    background: linear-gradient(180deg, var(--light), var(--dark)),  url(assets/Palos\ Hockey.png) ;
     background-blend-mode:hard-light;
     background-size: cover, 50px;
     background-repeat:space;
