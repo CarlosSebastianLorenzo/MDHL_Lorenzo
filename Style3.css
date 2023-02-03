@@ -21,40 +21,40 @@
 }
 /*HEADER*/
 .title{
-    position: absolute;
-    left: 350px;
-    top: 100px;
-    font-size: 5.5em;
+    font-size: clamp(1vw, 5.5em, 5vw);
     color: var(--primary);
     -webkit-text-stroke: 0.02em var(--danger);
     filter: drop-shadow(3px 2px 1px var(--dark));
 }
 .bg-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(./assets/design1_image1.jpg);
     height: 20em;
     background-size:150vw;
-    background-position: 0px -14rem;
+    background-position: top right;
     animation: bg 20s alternate infinite ease-in-out;
 }
 @keyframes bg{
     from{
-        background-position: -60rem -10rem;
+        background-position: top right;
     }
     50%{
-        background-position: -30rem -80rem;
+        background-position: bottom center;
     }
     to{
-        background-position: 0rem -10rem;
+        background-position: top left;
     }
 }
 
 .icon{
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    height: 300px;
-    width: 300px;
-    top: 10px;
-    left: 50px;
+    height: clamp(5vw, 200px, 25vw);
+    width: clamp(5vw, 200px, 25vw);
+    top: 15em;
+    right: 50px;
     filter: drop-shadow(1px 1px 1px var(--dark));
 }
 .icon:hover{
@@ -104,22 +104,22 @@ main{
     background: linear-gradient(180deg, var(--light), var(--danger));
     align-items: center;
     padding: 2em;
-}
-aside, .section{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 aside>figure>img{
     height: 500px;
-    width:35vw;
+    min-width:35vw;
     border-radius: 2em;
     border-bottom: 5px solid var(--dark);
     border-right: 5px solid var(--dark);
 }
 .section{
-    height: 500px;
+    min-height: 500px;
     padding: 2em;
     margin-left: 2em;
-    position:absolute;
     border-radius: 20px;
     color: var(--light);
     text-shadow: 2px 2px 2px var(--dark);
@@ -130,7 +130,60 @@ aside>figure>img{
 .section>section{
     padding: 1em;
 }
-li{
-    list-style-image: url() ;
-    list-style-type: disclosure-
+
+ul,ol{
+    list-style-position:inside;
+}
+li>ol{
+    list-style-type: lower-latin;
+}
+ul>li::marker{
+    content:"• ";
+    list-style-type:circle;
+}
+table{
+    background: linear-gradient(90deg, var(--secondary), var(--light), var(--secondary));
+    border-spacing: 0;
+    text-align: center;
+    border: 3px solid var(--danger);
+    color: var(--light);
+    text-shadow: 1px solid var(--dark);
+    box-shadow: 5px 3px 4px var(--dark);
+}
+caption{
+    background: linear-gradient(90deg, var(--secondary), var(--light), var(--secondary));
+    border: 3px solid var(--danger);
+    border-bottom: none;
+    font-size: 1.2em;
+    padding: 10px;
+    text-shadow: 2px 1px 1.5px var(--dark);
+    box-shadow: 5px 0px 4px var(--dark);
+    border-radius: 30px 30px 0px 0px;
+}
+caption:hover{
+    background: linear-gradient(90deg, var(--secondary), var(--secondary));
+}
+td, th{
+    border-bottom: 2px solid var(--danger);
+    padding: 10px;
+}
+tbody>tr:nth-child(odd){
+    text-shadow: 2px 1px 1.5px var(--dark);
+}
+tr:nth-child(even){
+    background: linear-gradient(90deg, var(--primary), var(--light), var(--primary));
+    color: var(--dark);
+}
+tr:nth-child(odd):hover{
+    background-color:var(--secondary);
+}
+tr:nth-child(even):hover{
+    background: linear-gradient(90deg, var(--light), var(--primary), var(--light));
+}
+thead>tr{
+    background: linear-gradient(90deg, var(--primary), var(--light), var(--primary));
+    color: var(--dark);
+}
+thead>tr:hover{
+    background: linear-gradient(90deg, var(--light), var(--primary), var(--light));
 }
