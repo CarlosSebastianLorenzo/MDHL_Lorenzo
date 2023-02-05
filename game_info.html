@@ -28,81 +28,115 @@
         </nav>
     </header>
     <main>
-        <aside>
-            <figure>
-                <div class="first" style="background-image: url(./assets/hockey_1.jpg);"></div>
-                <div style="background-image: url(./assets/hockey_2.jpg);"></div>
-                <div style="background-image: url(./assets/hockey_3.jpg);"></div>
-                <div style="background-image: url(./assets/design1_image1.jpg);"></div>
-                <div class="last" style="background-image: url(./assets/design1_image2.jpg);"></div>
-            </figure>
+        <aside class="map-place">
         </aside>
-        <table>
-            <caption>
-                <h3>Fall Schedule</h3>
-                <p>* All games take place on Saturday</p>
-            </caption>
-            <thead>
-            <tr>
-                <th>September</th>
-                <th>Teams</th>
-                <th>Location</th>
-                <th>Time</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td rowspan="2">9/01</td>
-                <td>U1 and U4</td>
-                <td>AJKatzenmaier</td>
-                <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-                <td>U3 and U2</td>
-                <td>Greenbay</td>
-                <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-                <td rowspan="2">9/08</td>
-                <td>U5 and U6</td>
-                <td>Howard A Yeager</td>
-                <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-                <td>U6 and U1</td>
-                <td>Marjorie P Hart</td>
-                <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-                <td rowspan="2">9/15</td>
-                <td>U2 and U4</td>
-                <td>North</td>
-                <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-                <td>U3 and U5</td>
-                <td>AJ Katzenmaier</td>
-                <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-                <td rowspan="2">9/22</td>
-                <td>U1 and U3</td>
-                <td>South</td>
-                <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-                <td>U2 and U6</td>
-                <td>Howard A Yeager</td>
-                <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-                <td>9/29</td>
-                <td>U4 and U5</td>
-                <td>Greenbay</td>
-                <td>9:30 a.m.</td>
-            </tr>
-            </tbody>
-        </table>
+        <form action="s">
+            <table>
+                <caption>
+                    <h3>Fall Schedule</h3>
+                    <p>* All games take place on Saturday</p>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>September</th>
+                        <th>Teams</th>
+                        <th>Location</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">9/01</td>
+                        <td>U1 and U4</td>
+                        <td>
+                            <input class="inputMap" id="inputMap1" type="radio" name="map" checked="checked">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.780458165188!2d-87.86499328430808!3d42.32588114525144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses!2sar!4v1675468676218!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <label class="labelMap" for="inputMap1">AJKatzenmaier</label>
+                        </td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U3 and U2</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap2">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.623878724228!2d-87.86944804732795!3d42.32046275436735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f933bce5af881%3A0x740a7a7d548adce1!2sGreen%20Bay%20School%20(Pre-K)!5e0!3m2!1ses-419!2sar!4v1675637720504!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <label class="labelMap" for="inputMap2">Greenbay</label>
+                        </td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">9/08</td>
+                        <td>U5 and U6</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap3">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.2700626313876!2d-87.85606978467926!3d42.31543827918989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1675637770203!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <label class="labelMap" for="inputMap3">Howard A Yeager</label>
+                        </td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U6 and U1</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap4">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.289839348974!2d-87.64816138469227!3d41.92962287921811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2637f9d7%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1ses-419!2sar!4v1675637843555!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <label class="labelMap" for="inputMap4">Marjorie P Hart</label>
+                        </td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">9/15</td>
+                        <td>U2 and U4</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap5">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16552.772101668783!2d-87.6552308472073!3d41.92067722664889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af14860a5%3A0x5736e62f19086c62!2sNorth%20Elementary!5e0!3m2!1ses-419!2sar!4v1675638193527!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <label class="labelMap" for="inputMap5">North</label>
+                        </td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U3 and U5</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap6">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.780458165188!2d-87.86499328430808!3d42.32588114525144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses!2sar!4v1675468676218!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <label class="labelMap" for="inputMap6">AJKatzenmaier</label>
+                        </td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">9/22</td>
+                        <td>U1 and U3</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap7">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23769.68441655564!2d-87.66372732089846!3d41.866816199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c9a9e2172c9%3A0xf8e1705680f94707!2sSouth%20Loop%20Elementary%20School!5e0!3m2!1ses-419!2sar!4v1675638253902!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <label class="labelMap" for="inputMap7">South</label>
+                        </td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U2 and U6</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap8">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.2700626313876!2d-87.85606978467926!3d42.31543827918989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1675637770203!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <label class="labelMap" for="inputMap8">Howard A Yeager</label>
+                        </td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>9/29</td>
+                        <td>U4 and U5</td>
+                        <td>
+                            <input class="inputMap" type="radio" name="map" id="inputMap9">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.623878724228!2d-87.86944804732795!3d42.32046275436735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f933bce5af881%3A0x740a7a7d548adce1!2sGreen%20Bay%20School%20(Pre-K)!5e0!3m2!1ses-419!2sar!4v1675637720504!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <label class="labelMap" for="inputMap9">Greenbay</label>
+                        </td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
         <div class="section">
             <p><b>Facility Tipe:</b> Outdoor</p>
             <p><b>Additional Information:</b> If deemed necessary by MDHL games may be shortened or cancelled due to extreme weather conditions</p>

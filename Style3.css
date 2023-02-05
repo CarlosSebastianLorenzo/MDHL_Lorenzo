@@ -31,7 +31,7 @@
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(180deg, var(--danger), var(--danger));
 }
-a:hover, .icon:hover{
+a:hover, .icon:hover, .inputMap:hover, .labelMap:hover{
     cursor: url(assets/hockey_glove3.png), auto;
 }
 /*HEADER*/
@@ -118,6 +118,7 @@ a[href="#"]{
 }
 /*MAIN*/
 main{
+    position: relative;
     background: linear-gradient(180deg, var(--light), var(--dark)),  url(assets/Palos\ Hockey.png) ;
     background-blend-mode:hard-light;
     background-size: cover, 50px;
@@ -250,4 +251,31 @@ thead>tr{
 }
 thead>tr:hover{
     background: linear-gradient(90deg, var(--light), var(--primary), var(--light));
+}
+.map-place{
+    width:600px; 
+    height:450px;
+}
+.map{
+    opacity: 0;
+    position: absolute;
+    top:2.5em;
+    left: 10vw;
+    border-radius: 50px 0px 50px 0px;
+    width: clamp(22rem, 80vw, 33rem);
+}
+.inputMap:checked + .map{
+    opacity: 1;
+    box-shadow: 5px 5px 4px var(--dark);
+}
+.inputMap{
+    opacity: 0;
+    position: relative;
+}
+.inputMap:checked ~ label{
+background-color: var(--danger);
+text-shadow:none;
+font-size: 1.1em;
+color: var(--light);
+padding: .4em;
 }
