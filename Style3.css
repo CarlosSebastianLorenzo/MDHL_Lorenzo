@@ -71,7 +71,7 @@ body{
 
 .icon{
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     height: clamp(5vw, 160px, 20vw);
     width: clamp(6vw, 190px, 23vw);
     top: 15em;
@@ -211,6 +211,18 @@ section>h3,article>h3,section>h2{
 .section>section{
     padding: 1em;
 }
+.section>p{
+    padding-top: 5px;
+}
+
+.flex{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    gap: 5px;
+}
 /*LISTAS*/
 ul,ol{
     list-style-position:outside;
@@ -302,8 +314,8 @@ padding: .4em;
 
 /*FORM*/
 form{
-    max-width: 55em;
-    width: 80vw;
+    width: 55em;
+    max-width: 75vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,18 +325,20 @@ form>h2, fieldset>legend{
     color: var(--primary);
     padding-bottom: 1em;
     padding-top: 1em;
+    text-align: center;
 }
 
 fieldset{
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     gap: 1em;
     border: none;
 }
-
 .firma{
     display:flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 input[type=submit]{
     width: 80%;
@@ -391,5 +405,24 @@ input[type=submit]:hover{
         transition: 1s;
         background-color: var(--secondary);
         border: 2px var(--danger) solid;
+    }
+
+    .icon{
+        top: .5em;
+        left: 1em;
+    }
+
+    aside>figure>div:hover{
+    width: 200px;
+    }
+
+    caption, td, th{
+        padding: 5px;
+        align-items: center;
+    }
+    .inputMap:checked ~ label{
+        color: var(--light);
+        display: flex;
+        gap: 5px;    
     }
 }
