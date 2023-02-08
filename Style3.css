@@ -31,7 +31,7 @@
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(180deg, var(--danger), var(--danger));
 }
-a:hover, .icon:hover, .inputMap:hover, .labelMap:hover, input:hover{
+a:hover, .icon:hover, .inputMap:hover, .labelMap:hover, input:hover, select:hover, option:hover{
     cursor: url(assets/hockey_glove3.png), auto;
 }
 body{
@@ -388,7 +388,7 @@ input[type=submit]:hover{
         z-index: 2;
         height: 30px;
         width: 30px;
-        position: absolute;
+        position: fixed;
         color: var(--light);
     }
     .hamburguer:checked ~ span{
@@ -408,6 +408,7 @@ input[type=submit]:hover{
     }
 
     .icon{
+        position: fixed;
         top: .5em;
         left: 1em;
     }
